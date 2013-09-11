@@ -12,7 +12,6 @@ define(['backbone', 'Employee'], function(Backbone, Employee) {
 				processData: false
 			}, options);
 
-			// Make the request.
 			return $.ajax(params);
 		},
 		parse : function(response) {
