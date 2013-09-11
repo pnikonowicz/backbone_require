@@ -1,8 +1,10 @@
 define([
 	
 ], function() {
-	// describe("EmployeesModel", function() {
-		// console.debug("H");	
-	// });
+	describe("EmployeesModel", function() {
+		it('wahtever', function() {
+			console.debug("HI")
+		});	
+	});
 });
 	
