@@ -16,6 +16,8 @@ define([
 			
 			runs(function() {
         expect(employees.length).toEqual(6);
+        expect(employees[0]).not.toBeUndefined();
+        expect(employees[0].Id).toEqual(4);
     	});
 		});	
 	});
