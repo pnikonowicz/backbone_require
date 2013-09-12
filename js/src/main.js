@@ -4,6 +4,7 @@ require.config({
 		jquery : 'vendor/jquery',
 		underscore : 'vendor/underscore',
 		backbone : 'vendor/backbone',
+		mustache : 'vendor/mustache',
 		src : 'src',
 		view : 'src/view',
 		model: 'src/model',
