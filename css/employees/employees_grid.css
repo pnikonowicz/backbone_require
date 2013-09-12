@@ -1,6 +1,4 @@
 #employees.grid .employee {
-	text-align: left;
-	margin-bottom: 3px;
 	width: 1250px;
 	height: 125px;
 }
@@ -9,21 +7,16 @@
 	vertical-align: middle;
 	border: 3px solid #eee;
 	min-height: 120px;
-	min-width: 120px;
-	padding: 0px;
-	margin: 0px;
+	min-width: 175px;
 	line-height: 120px;
+	margin: -4px;
+	overflow: hidden;
 }
-#employees.grid .employee div a {
-	text-decoration: none;
-	color: #eee;
-}
-#employees.grid .employee div a:hover {
-	text-decoration: underline;
-}
+
 #employees.grid .title {
-	min-width: 120px;
+	min-width: 175px;
 	display:inline-block;
 	border: 3px solid #eee;
+	margin: -4px;
 }
 

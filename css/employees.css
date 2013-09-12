@@ -6,3 +6,8 @@
 	line-height: 25px;
 	letter-spacing: 2px;
 }
+
+#changeViewButton {
+	padding: 25px;
+	margin: 15px;
+}
