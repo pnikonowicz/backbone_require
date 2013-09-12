@@ -18,3 +18,7 @@
 #employees.list ul li a:hover {
 	text-decoration: underline;
 }
+
+#employees.list .title {
+	display:none;
+}

@@ -1,3 +1,4 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
   <head>
     <link rel="stylesheet" href="css/styles.css">
@@ -15,23 +16,31 @@
     <div id="employees_template_mustache">
       <button id="changeViewButton">Change View</button>
       <div id="employees" class="grid">
+        <div class="titles">
+          <div class="title">Avatar</div>
+          <div class="title">First Name</div>
+          <div class="title">Last Name</div>
+          <div class="title">Location</div>
+          <div class="title">&nbsp;</div>
+        </div>
+        
         {{#employees}}
-          <ul>
-            <li class="avatar"><img src="{{AvatarUrl}}"/></li>
-            <li class="firstName">{{FirstName}}</li>
-            <li class="lastName">{{LastName}}</li>
-            <li class="location">{{Location}}</li>
-            <li class="moreDetails"><a href="#/more/{{Id}}">more</a></li>
-          </ul>
+          <div class="employee">
+            <div class="avatar"><img src="{{AvatarUrl}}"/></div>
+            <div class="firstName">{{FirstName}}</div>
+            <div class="lastName">{{LastName}}</div>
+            <div class="location">{{Location}}</div>
+            <div class="moreDetails"><a href="#/more/{{Id}}">more</a></div>
+          </div>
         {{/employees}}
       </div>
     </div>
     
     <div id="employee_details_template_mustache">
       <ul class="list">
-        <li><span class="strong">Likes:</span> {{Likes}}</li>
-        <li><span class="strong">Dislikes:</span> {{Dislikes}}</li>
-        <li><span class="strong">Quote:</span> {{Favorite Quote}}</li>
+        <li><div class="strong">Likes:</div> {{Likes}}</li>
+        <li><div class="strong">Dislikes:</div> {{Dislikes}}</li>
+        <li><div class="strong">Quote:</div> {{Favorite Quote}}</li>
       </ul>
     </div>
   </body>
