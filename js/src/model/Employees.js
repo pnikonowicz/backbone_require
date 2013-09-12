@@ -1,4 +1,4 @@
-define(['backbone', 'Employee'], function(Backbone, Employee) {
+define(['backbone', 'model/Employee'], function(Backbone, Employee) {
 	var Employees = Backbone.Collection.extend({
 		model : Employee,
 		url : function() {

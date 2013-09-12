@@ -6,7 +6,8 @@ require.config({
 		backbone : 'vendor/backbone',
 		jasmine : 'tests/lib/jasmine-1.3.1/jasmine',
 		'jasmine-html' : 'tests/lib/jasmine-1.3.1/jasmine-html',
-		spec : 'tests/spec/'
+		spec : 'tests/spec/',
+		model: 'src/model'
 	},
 	shim : {
 		underscore : {

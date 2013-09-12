@@ -1,5 +1,5 @@
 define([
-	'Employees'
+	'model/Employees'
 ], function(Employees) {
 	describe("Employees", function() {
 		it('can retreive data', function() {
