@@ -1,20 +1,2 @@
-#employees ul {
-	list-style: none;
-	text-align: left;
-	border: 1px solid #eee;
-	padding: 10px 0;
-}
-#employees ul li {
-	display: inline;
-	text-transform: uppercase;
-	padding: 0 10px;
-	letter-spacing: 10px;
-	vertical-align: middle;
-}
-#employees ul li a {
-	text-decoration: none;
-	color: #eee;
-}
-#employees ul li a:hover {
-	text-decoration: underline;
-}
+@import url('employees/employees_grid.css');
+@import url('employees/employees_list.css');

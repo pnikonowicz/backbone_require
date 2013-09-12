@@ -1,0 +1,20 @@
+#employees.list ul {
+	list-style: none;
+	text-align: left;
+	border: 1px solid #eee;
+	padding: 10px 0;
+}
+#employees.list ul li {
+	display: inline;
+	text-transform: uppercase;
+	padding: 0 10px;
+	letter-spacing: 10px;
+	vertical-align: middle;
+}
+#employees.list ul li a {
+	text-decoration: none;
+	color: #eee;
+}
+#employees.list ul li a:hover {
+	text-decoration: underline;
+}
