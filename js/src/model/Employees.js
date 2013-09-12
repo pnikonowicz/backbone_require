@@ -1,22 +1,9 @@
-define(['backbone', 'model/Employee'], function(Backbone, Employee) {
-	var Employees = Backbone.Collection.extend({
+define(['backbone', 'model/Employee', 'model/jsonp_sync_trait'], function(Backbone, Employee, JsonpSyncTrait) {
+	var Employees = Backbone.Collection.extend(_.extend(JsonpSyncTrait, {
 		model : Employee,
 		url : function() {
 			return 'http://fe.interview.cheezburger.com/employees';
-		},
-		sync : function(method, model, options) {
-			var params = _.extend({
-				type : 'GET',
-				dataType : 'jsonp',
-				url : model.url(),
-				processData: false
-			}, options);
-
-			return $.ajax(params);
-		},
-		parse : function(response) {
-			return response;
 		}
-	});
+	}));
 	return Employees;
 });
