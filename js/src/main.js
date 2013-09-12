@@ -5,6 +5,7 @@ require.config({
 		underscore : 'vendor/underscore',
 		backbone : 'vendor/backbone',
 		mustache : 'vendor/mustache',
+		colorbox : 'vendor/jquery.colorbox-min',
 		src : 'src',
 		view : 'src/view',
 		model: 'src/model',

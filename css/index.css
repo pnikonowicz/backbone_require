@@ -1,3 +1,11 @@
 div[id*='mustache'] {
 	display: none;
 }
+
+.list {
+	list-style: none;
+}
+
+.strong {
+	font-weight: bold;
+}
