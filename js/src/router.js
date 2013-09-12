@@ -1,4 +1,4 @@
-define(['backbone', 'view/employees_controller', 'view/more_controller'], function(Backbone, EmployeesController, MoreController) {
+define(['backbone', 'view/employees_controller', 'view/employees_details_controller'], function(Backbone, EmployeesController, EmployeesDetailsController) {
 	var Router = Backbone.Router.extend({
 		routes : {
 			'' : 'defaultRoute',
@@ -8,7 +8,7 @@ define(['backbone', 'view/employees_controller', 'view/more_controller'], functi
 			new EmployeesController().render();
 		},
 		moreRoute : function(id) {
-			new MoreController({id:id}).render();
+			new EmployeesDetailsController({id:id}).render();
 		}
 	});
 

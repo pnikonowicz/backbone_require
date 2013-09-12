@@ -1,5 +1,5 @@
 define(['backbone', 'model/employee_details', 'view/employee_details_view'], function(Backbone, EmployeeDetails, EmployeeDetailsView) {
-	var MoreController = Backbone.View.extend({
+	var EmployeesDetailsController = Backbone.View.extend({
 		model : undefined,
 		view : new EmployeeDetailsView,
 		initialize: function(params) {
@@ -11,5 +11,5 @@ define(['backbone', 'model/employee_details', 'view/employee_details_view'], fun
 			}.bind(this));
 		}
 	});
-	return MoreController;
+	return EmployeesDetailsController;
 });
