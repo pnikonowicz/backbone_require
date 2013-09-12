@@ -1,10 +1,10 @@
-define(['backbone'], function(Backbone) {
+define(['backbone', 'view/main_view'], function(Backbone, MainView) {
 	var Router = Backbone.Router.extend({
 		routes : {
 			'' : 'defaultRoute'
 		},
 		defaultRoute : function(action) {
-			console.debug("enter view here! :D")
+			new MainView().render();
 		}
 	});
 

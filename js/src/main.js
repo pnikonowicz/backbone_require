@@ -4,7 +4,8 @@ require.config({
 		jquery : 'vendor/jquery',
 		underscore : 'vendor/underscore',
 		backbone : 'vendor/backbone',
-		src : 'src'
+		src : 'src',
+		view : 'src/view'
 	},
 	shim : {
 		underscore : {
