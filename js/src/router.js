@@ -8,7 +8,7 @@ define(['backbone', 'view/employees_controller', 'view/more_controller'], functi
 			new EmployeesController().render();
 		},
 		moreRoute : function(id) {
-			new MoreController().render(id);
+			new MoreController({id:id}).render();
 		}
 	});
 
