@@ -1,5 +1,5 @@
 define(['backbone', 'model/employees'], function(Backbone, Employees) {
-	var EmployeesView = Backbone.View.extend({
+	var EmployeesController = Backbone.View.extend({
 		el : '#page',
 		model : new Employees,
 		render : function() {
@@ -9,5 +9,5 @@ define(['backbone', 'model/employees'], function(Backbone, Employees) {
 		}
 	});
 
-	return EmployeesView;
+	return EmployeesController;
 });

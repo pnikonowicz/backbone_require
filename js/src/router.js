@@ -1,10 +1,10 @@
-define(['backbone', 'view/employees_view'], function(Backbone, EmployeesView) {
+define(['backbone', 'view/employees_controller'], function(Backbone, EmployeesController) {
 	var Router = Backbone.Router.extend({
 		routes : {
 			'' : 'defaultRoute'
 		},
 		defaultRoute : function(action) {
-			new EmployeesView().render();
+			new EmployeesController().render();
 		}
 	});
 
