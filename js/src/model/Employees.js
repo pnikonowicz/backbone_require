@@ -1,4 +1,4 @@
-define(['backbone', 'model/Employee', 'model/jsonp_sync_trait'], function(Backbone, Employee, JsonpSyncTrait) {
+define(['backbone', 'model/employee', 'model/jsonp_sync_trait'], function(Backbone, Employee, JsonpSyncTrait) {
 	var Employees = Backbone.Collection.extend(_.extend(JsonpSyncTrait, {
 		model : Employee,
 		url : function() {
