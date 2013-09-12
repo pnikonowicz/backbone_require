@@ -5,7 +5,8 @@ require.config({
 		underscore : 'vendor/underscore',
 		backbone : 'vendor/backbone',
 		src : 'src',
-		view : 'src/view'
+		view : 'src/view',
+		model: 'src/model'
 	},
 	shim : {
 		underscore : {
