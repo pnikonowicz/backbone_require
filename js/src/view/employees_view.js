@@ -6,7 +6,6 @@ define(['backbone', 'model/employees'], function(Backbone, Employees) {
 			this.model.fetch().success(function(employees) {
 				this.$el.html(employees);
 			}.bind(this));
-
 		}
 	});
 
