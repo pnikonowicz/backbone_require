@@ -12,7 +12,14 @@ define(['backbone', 'mustache'], function(Backbone, Mustache) {
 	  	$('#changeViewButton').click(this.swapView);
 	  },
 	  swapView: function() {
-	  	console.debug("HI")
+	  	var employees = $('#employees');
+	  	if(employees.hasClass('grid')) {
+	  		employees.removeClass('grid');
+	  		employees.addClass('list');
+	  	} else {
+	  		employees.removeClass('list');
+	  		employees.addClass('grid');
+	  	}
 	  }
 	});
 
