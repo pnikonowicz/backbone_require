@@ -38,6 +38,7 @@ require(['jasmine-html', 'jquery'], function(jasmine, $) {
 
 	var specs = [];
 	specs.push('spec/EmployeesTest');
+	specs.push('spec/EmployeeDetailsTest');
 
 	$(function() {
 		require(specs, function() {
