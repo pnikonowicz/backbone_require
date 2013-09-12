@@ -13,9 +13,14 @@
     <!--  If you try load a template without a server using the text! plugin you will get a Cross origin error. -->
     <!--  For more information about this, look here: http://stackoverflow.com/questions/8408031/requirejs-text-plugin-gives-cross-origin-error-in-chrome-->
     <div id="employees_template_mustache">
+      <ul>
       {{#employees}}
-        * {{FirstName}}
+        <li><img src="{{AvatarUrl}}"/></li>
+        <li>{{FirstName}}</li>
+        <li>{{LastName}}</li>
+        <li>{{Location}}</li>
       {{/employees}}
+      </ul>
     </div>
   </body>
 </html>
