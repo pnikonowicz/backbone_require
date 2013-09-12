@@ -8,6 +8,7 @@ require.config({
 		colorbox : 'vendor/jquery.colorbox-min',
 		src : 'src',
 		view : 'src/view',
+		controller : 'src/controller',
 		model: 'src/model',
 		template: '../template'
 	},
