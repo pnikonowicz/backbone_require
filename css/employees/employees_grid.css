@@ -6,7 +6,6 @@
 }
 #employees.grid .employee div {
 	display: inline-block;
-	letter-spacing: 1px;
 	vertical-align: middle;
 	border: 3px solid #eee;
 	min-height: 120px;

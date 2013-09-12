@@ -2,7 +2,7 @@ div[id*='mustache'] {
 	display: none;
 }
 
-.list {
+ul.list {
 	list-style: none;
 }
 

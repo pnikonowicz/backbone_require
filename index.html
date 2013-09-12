@@ -15,7 +15,7 @@
     <!--  For more information about this, look here: http://stackoverflow.com/questions/8408031/requirejs-text-plugin-gives-cross-origin-error-in-chrome-->
     <div id="employees_template_mustache">
       <button id="changeViewButton">Change View</button>
-      <div id="employees" class="grid">
+      <div id="employees" class="list">
         <div class="titles">
           <div class="title">Avatar</div>
           <div class="title">First Name</div>
@@ -27,10 +27,12 @@
         {{#employees}}
           <div class="employee">
             <div class="avatar"><img src="{{AvatarUrl}}"/></div>
-            <div class="firstName">{{FirstName}}</div>
-            <div class="lastName">{{LastName}}</div>
-            <div class="location">{{Location}}</div>
-            <div class="moreDetails"><a href="#/more/{{Id}}">more</a></div>
+            <div class="details">
+              <div class="firstName">{{FirstName}}</div>
+              <div class="lastName">{{LastName}}</div>
+              <div class="location">{{Location}}</div>
+              <div class="moreDetails"><a href="#/more/{{Id}}">more</a></div>
+            </div>
           </div>
         {{/employees}}
       </div>
