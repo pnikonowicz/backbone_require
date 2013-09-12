@@ -6,7 +6,8 @@ require.config({
 		backbone : 'vendor/backbone',
 		src : 'src',
 		view : 'src/view',
-		model: 'src/model'
+		model: 'src/model',
+		template: '../template'
 	},
 	shim : {
 		underscore : {

@@ -1,10 +1,19 @@
 <html>
   <head>
+    <link rel="stylesheet" href="css/styles.css">
     <script data-main="js/src/main" src="js/vendor/require.js"></script>
   </head>
   <body>
     <div id="page">
       Loading....
+    </div>
+
+    <!-- TEMPLATES -->
+    <!--  This is here because require's text.js plugin expects us to be running on a server. -->
+    <!--  If you try load a template without a server using the text! plugin you will get a Cross origin error. -->
+    <!--  For more information about this, look here: http://stackoverflow.com/questions/8408031/requirejs-text-plugin-gives-cross-origin-error-in-chrome-->
+    <div id="employees_template_mustache">
+      yay
     </div>
   </body>
 </html>
