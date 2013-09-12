@@ -17,6 +17,7 @@ require.config({
 	}
 });
 
-define(['src/router'], function(Router) {
-	return new Router();
+define(['src/router', 'backbone'], function(Router, Backbone) {
+	new Router();
+	Backbone.history.start();
 }); 
