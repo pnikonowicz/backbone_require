@@ -1,0 +1,20 @@
+This site uses Backbone.js just for fun, Require.js to load up
+libraries, Mustache.js for templating, colorbox for the lightbox part,
+and jasmine for testing.
+
+Because I wanted to show off the routing capabilities of backbone,
+when you click a 'more' link, a routing request is fired. This isn't
+an optimal solution however. I only did it to show off the routing
+capabilities.
+
+I did not want to have a server or any external compilation steps.
+Therefore sass was not used. Also, because there is no server, I could
+not get templates using Require.js. There is more information about
+this in index.html. It is also why you will see a 'get' error when the
+page starts. Ordinarily this would not happen.
+
+I was originally going to add media queries to support mobile and full
+screen devices, but it's getting late and I think what I have here
+should at least give you what you need.
+
+To see the site, simply point your browser to index.html.
